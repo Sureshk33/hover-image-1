@@ -1,0 +1,34 @@
+
+.vs-blog{
+  background-color: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.vs-blog .blog-img a{
+  display: inline-block;
+}
+
+.vs-blog .blog-img__item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  transition: 0.5s;
+  background-size: cover;
+}
+
+.vs-blog:hover .blog-img__item:nth-child(2){
+  transform: translatex(-50%) scalex(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.vs-blog:hover .blog-img__item:nth-child(1){
+  transform: translatex(0) scalex(1);
+  opacity: 1;
+  filter: blur(0);
+}
